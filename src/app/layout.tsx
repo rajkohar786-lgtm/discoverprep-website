@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAds } from "@/components/analytics/google-ads";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -103,6 +104,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GoogleAds />
         {children}
       </body>
     </html>

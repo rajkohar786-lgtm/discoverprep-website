@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { IPhoneMockup } from "@/components/ui/iphone-mockup";
+import { AppStoreButton } from "@/components/ui/app-store-button";
 
 export function Hero() {
   return (
@@ -42,24 +42,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center"
             >
-              <a
-                href="https://apps.apple.com/ca/app/discoverprep-citizenship-2026/id6755275035"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-black hover:bg-gray-900 text-white px-6 py-3 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-              >
-                <Image
-                  src="/apple-logo.png"
-                  alt="Apple"
-                  width={36}
-                  height={36}
-                  className="invert"
-                />
-                <div className="flex flex-col items-start leading-tight">
-                  <span className="text-xs font-normal">Download on the</span>
-                  <span className="text-2xl font-semibold -mt-0.5">App Store</span>
-                </div>
-              </a>
+              <AppStoreButton size="lg" />
               <span className="text-slate-400 text-sm">
                 Free • iOS 17+
               </span>
