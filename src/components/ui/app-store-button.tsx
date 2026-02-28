@@ -12,7 +12,7 @@ export function AppStoreButton({ size = "lg", className = "" }: AppStoreButtonPr
     // Track conversion in Google Ads
     if (typeof window !== "undefined" && typeof window.gtag === "function") {
       window.gtag("event", "conversion", {
-        send_to: "AW-17948575514/J2CACND-0vwbEJqOxC",
+        send_to: "AW-17983618905",
         value: 1.0,
         currency: "CAD",
       });
