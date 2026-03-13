@@ -19,7 +19,7 @@ export function Footer() {
 
             {/* Copyright */}
             <p className="text-slate-500 text-sm">
-              &copy; 2026 Kohar Inc.
+              &copy; 2026 Kohar Innovations Ltd.
             </p>
           </div>
         </div>
